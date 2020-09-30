@@ -1,0 +1,3 @@
+export const NEWPOST_ADD = 'NEWPOST_ADD';
+export const NEWPOST_SUCCEED = 'NEWPOST_SUCCEED';
+export const NEWPOST_FAILED = 'NEWPOST_FAILED';

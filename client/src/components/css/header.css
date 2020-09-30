@@ -1,0 +1,32 @@
+#main-header {
+    height: 8em;
+    border-bottom: solid 1px #ffffff;
+}
+
+#main-header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100%;
+
+    background-color: #444;
+    background-image: url('../../img/layout/banner.jpg');
+    background-size: 100% 200%;
+    background-position-y: 30%;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #b2f3f7;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+}
+
+@media screen and (min-width: 40em){
+    #main-header {
+        height: 10em;
+        font-size: 1.2em;
+    }
+}

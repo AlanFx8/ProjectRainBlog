@@ -1,0 +1,40 @@
+#login-form .input-element {
+    padding: .25rem;
+    margin: 1rem;
+}
+
+#login-form label {
+    display: inline-block;
+    width: 18rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#login-form input {
+    padding: .25rem;
+    line-height: 1.25rem;
+    width: 18rem;
+    border: solid 1px #000000;
+    border-radius: .5rem;
+}
+
+#login-form .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form button {
+    width: 30%;
+    padding: .5rem;
+    font-weight: bold;
+    background-color: #006bb3;
+    border: solid 1px #000000;
+    border-radius: .5rem;
+}
+
+#login-form button:hover {
+    background-color: #56a6db;
+    font-style: italic;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+html,
+body,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+img,
+section,
+form,
+fieldset,
+legend,
+label,
+input,
+textarea,
+select,
+button,
+nav,
+ul,
+ol,
+li,
+table {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    line-height: baseline;
+    box-sizing: border-box;
+    white-space: 0;
+}
+
+p + p {
+    margin-top: 1em;
+}
+  
+a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+img, figure {
+    display: block;
+    max-width: 100%;
+}
+  
+a img {
+    border: none;
+}
+
+/*Basic styles*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 1.6rem Helvetica;
+    height: 100vh;
+}

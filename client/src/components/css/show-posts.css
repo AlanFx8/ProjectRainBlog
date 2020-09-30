@@ -1,0 +1,108 @@
+.post-image-link {
+    display: block;
+}
+
+.post-image {
+    width: 80%;
+    max-width: 203px;
+    height: 126px;
+    font-size: 0;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.post-image:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+#loading-message {
+    background-color: rgb(94, 94, 94, .6);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: .5em;
+    border-radius: .4;
+}
+
+#no-results-message {
+    background-color: rgba(0, 83, 83, 0.6);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: .5em;
+    border: solid 2px rgb(0, 73, 73);
+    border-radius: .5em;
+}
+
+/*ID and Date*/
+.post-id a {
+    color: #234792;
+}
+
+.post-id a:hover {
+    color: #008cff;
+    font-style: italic;
+}
+
+.post-id, .post-date {
+    font-size: 1.4rem;
+}
+
+/*Admin panel*/
+.admin-panel {
+    padding: 1.5rem;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.admin-panel button {
+    width: 14rem;
+    line-height: 2.5rem;
+    padding: .5rem;
+    font-weight: bold;
+    border: solid 1px #000000;
+    border-radius: .5rem;
+}
+
+.admin-panel button:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.admin-panel .edit-button {
+    background-color: #006668;
+    margin-right: 6rem;
+}
+
+.admin-panel .edit-button:hover {
+    background-color: #009797;
+}
+
+.admin-panel .delete-button {
+    background-color: #184344;
+}
+
+.admin-panel .delete-button:hover {
+    background-color: #4d6b6b;
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width: 40em){
+    .post-image-link {
+        display: inline-block;
+    }
+    
+    .post-image {
+        width: 203px;
+        height: 126px;
+        font-size: 0;
+        vertical-align: middle;
+    }
+
+    .post-header-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,40 @@
+/*
+    This contains the basic styles for the whole site
+*/
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+
+body {
+    background-color: #888;
+    background-image: url('../../img/layout/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#main-content {
+    flex: 1;
+    width: 90%;
+    margin: auto;
+}
+
+.post { /*Both the intro and blog posts*/
+    padding: .75rem;
+    border: solid 1px #000;
+    font-family: 'Literata', serif;
+    background-color: rgba(255, 255, 255, .6);
+    margin: 2rem 0;
+}
+
+@media screen and (min-width: 40em){
+    #main-content {
+        width: 80%;
+        padding: 1em;
+    }
+}

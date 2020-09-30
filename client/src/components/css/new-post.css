@@ -1,0 +1,219 @@
+/*The main Form styles*/
+#new-post-form {
+    border: solid 1px #000;
+    margin-top: .5em;
+}
+
+.submit-post-button {
+    background-color: teal;
+    font-weight: bold;
+    width: 40%;
+    padding: .5em;
+    border: solid 1px #000000;
+    border-radius: .5em;
+}
+
+.submit-post-button:hover {
+    background-color: skyblue;
+    font-style: italic;
+}
+
+#submit-post-button-wrapper {
+    background-color: rgba(0, 170, 170, 0.5);
+    padding: .5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*The Form Content styles*/
+#form-content {
+    background-color: rgb(173, 216, 230, .5);
+    padding: .5em;
+    border-bottom: solid 1px #000;
+}
+
+#form-intro {
+    text-align: center;
+}
+
+/*Text and Image objects styles*/
+.textbox-object {
+    position: relative;
+    padding: .5em;
+    background-color: lightskyblue;
+    border: solid 1px #000;
+    margin-top: .5em;
+}
+
+.textbox-object > textarea {
+    display: block;
+    margin: .5em auto;
+    width: 80%;
+    resize: vertical;
+    outline: none;
+    border: solid 1px #000;
+    padding: .5em;
+}
+
+.image-object {
+    position: relative;
+    padding: .5em;
+    background-color: #183b68;
+    border: solid 1px #000;
+    margin-top: .5em;
+}
+
+.image-object > input[type="file"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.image-object-file {
+    margin-top: .5em;
+}
+
+.image-object-file > div {
+    font-weight: bold;
+}
+
+.image-object-file > label {
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #004bae;
+    padding: .25em;
+    border-radius: .5em;
+}
+
+.image-object-file > label:hover {
+    cursor: pointer;
+    font-style: italic;
+    background-color: #4361e4;
+}
+
+.delete-object-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    background-color: transparent;
+    opacity: .8;
+}
+
+.delete-object-button:hover {
+    font-weight: bold;
+}
+
+.edit-buttons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.edit-buttons-wrapper > button {
+    background-color: rgb(2, 113, 218);
+    width: 48%;
+    padding: .25em;
+    border-radius: .5em;
+    font-weight: bold;
+}
+
+.edit-buttons-wrapper > button:hover {
+    background-color: rgb(68, 117, 253);
+    font-style: italic;
+}
+
+.image-object > .edit-buttons-wrapper > button {
+    background-color: #0793ac;
+}
+
+.image-object > .edit-buttons-wrapper > button:hover {
+    background-color:  #75c1ce;
+}
+
+.preview-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+/*Form Buttons styles*/
+#newpost-buttons-wrapper {
+    background-color: rgb(0, 0, 255, .5);
+    padding: .5em;
+    border-bottom: solid 1px #000;
+}
+
+#newpost-buttons-wrapper > button {
+    width: 70%;
+    margin: auto;
+}
+
+#newpost-buttons-wrapper > button + button {
+    margin-top: .75em;
+}
+
+.formBTN {
+    background-color: teal;
+    font-weight: bold;
+    width: 40%;
+    padding: .5em;
+    border: solid 1px #000000;
+    border-radius: .5em;
+}
+
+.formBTN:hover {
+    background-color: skyblue;
+    font-style: italic;
+}
+
+/*Test messages*/
+.validating-message {
+    background-color: #3142db;
+    color: #1a0077;
+    border: solid 1px #1a0077;
+}
+
+.success-message {
+    background-color: #31db6a;
+    color: #005804;
+    border: solid 1px #005804;
+}
+
+.error-message {
+    background-color: #f07964;
+    color: #580000;
+    border: solid 1px #580000;
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width: 40em){
+    .image-object-file {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .image-object-file > label {
+        width: 20%;
+    }
+
+    #newpost-buttons-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #newpost-buttons-wrapper > button {
+        width: 46%;
+    }
+
+    #newpost-buttons-wrapper > button + button {
+        margin-top: 0;
+    }
+}
